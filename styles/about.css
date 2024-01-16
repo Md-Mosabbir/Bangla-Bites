@@ -1,0 +1,8 @@
+.about-text-container {
+  height: 100vh;
+  padding-block: 2rem;
+}
+.about-text-content {
+  font-size: 4.5rem;
+  font-family: var(--main-font);
+}

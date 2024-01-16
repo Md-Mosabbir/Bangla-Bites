@@ -1,0 +1,37 @@
+.hero-container {
+  height: calc(100vh - 7rem);
+  background-color: beige;
+  position: relative;
+}
+.hero-front-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  height: calc(100vh - 7rem);
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax beige;
+  clip-path: inset(0 -100vmax);
+}
+
+.image-container img {
+  width: 600px;
+  aspect-ratio: 1/1;
+  border-radius: 1.5rem;
+}
+
+.hero-text h1 {
+  font-family: var(--heading-font);
+  font-size: var(--heading1-size);
+  font-weight: bold;
+  line-height: 1.4;
+  width: 950px;
+}
+
+.hero-text h2 {
+  font-family: var(--main-font);
+  font-size: var(--heading2-size);
+
+  line-height: 1.3;
+}
