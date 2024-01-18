@@ -15,7 +15,7 @@
   --main-font: "Roboto", sans-serif;
   --heading-font: "Montserrat", sans-serif;
 
-  --heading1-size: 4.6rem;
+  --heading1-size: 4.4rem;
   --heading2-size: 2rem; /* 32px */
   --heading3-size: 1.5rem; /* 24px */
   --body-font-size: 1rem; /* 16px */
@@ -50,4 +50,7 @@
 
 #root {
   padding-inline: var(--padding-x-layout);
+}
+.active {
+  color: red;
 }

@@ -1,8 +1,22 @@
 .about-text-container {
-  height: 100vh;
-  padding-block: 2rem;
+  height: 400vh;
+  padding-block: 4rem;
+  margin-top: -100vh;
 }
-.about-text-content {
-  font-size: 4.5rem;
+#text-content {
+  font-size: 2.5rem;
   font-family: var(--main-font);
+  width: 1200px;
+}
+
+.text-wrapper {
+  min-height: 100vh;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.spacer {
+  margin: 65vh;
 }

@@ -2,6 +2,7 @@
   height: calc(100vh - 7rem);
   background-color: beige;
   position: relative;
+  z-index: 4;
 }
 .hero-front-container {
   display: flex;

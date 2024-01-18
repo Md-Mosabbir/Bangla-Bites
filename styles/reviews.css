@@ -1,0 +1,21 @@
+.reviews-wrapper {
+  overflow-x: hidden;
+
+  position: relative;
+  height: 90vh;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 1rem;
+  width: 300vw;
+  position: relative;
+  background-color: coral;
+}
+
+.review-block {
+  width: 100vw;
+  height: 30vh;
+  background-color: red;
+  padding: 4rem 3rem;
+}
