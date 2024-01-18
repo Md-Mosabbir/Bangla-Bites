@@ -28,7 +28,7 @@ function hero() {
   root.appendChild(heroContainer)
 
   // GSAP Timeline
-  const tl = gsap.timeline({})
+  const tl = gsap.timeline()
 
   // Animation for the hero text
   tl.from(".hero-text h2", {
@@ -37,29 +37,6 @@ function hero() {
     ease: "power2.out",
   })
 
-  // Animation for the main header
-  tl.from(".main-header", {
-    duration: 0.6,
-    ease: "power1",
-    y: -50,
-  })
-
-  // Animation for the logo
-  tl.from(".header-logo", {
-    x: -50,
-    opacity: 0,
-    duration: 0.7,
-    ease: "power2.out",
-  })
-
-  // Animation for navigation buttons
-  tl.from(".nav-btn", {
-    y: -30,
-    opacity: 0,
-    stagger: 0.2, // Stagger the animation for each button
-    duration: 0.5,
-    ease: "power2.out",
-  })
   const text = new SplitType(".hero-text h1", { types: "chars" })
 
   // Animation for the hero text
