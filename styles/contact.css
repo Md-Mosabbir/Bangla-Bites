@@ -1,0 +1,28 @@
+.contact-details {
+  height: calc(100vh - 7rem);
+  padding-block: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.contact-text {
+  font-family: var(--primary-font);
+  font-size: 5rem;
+}
+.contact-text p {
+  border-block: 1px solid rgba(0, 0, 0, 0.219);
+  padding-block: 1rem;
+}
+
+.address {
+  align-self: flex-end;
+
+  font-family: var(--primary-font);
+  font-size: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.address > * {
+  border-block: 1px solid rgba(0, 0, 0, 0.219);
+  padding-block: 0.8rem;
+}

@@ -5,6 +5,7 @@ import hero from "./components/hero"
 import reviews from "./components/reviews"
 import footerModule from "./components/footer"
 import menu from "./components/menu"
+import contact from "./components/contact"
 
 // Smooth scroll
 
@@ -21,7 +22,7 @@ const root = document.getElementById("root")
 
 const navigation = document.querySelector(".main-navigation")
 
-const navButtons = document.querySelectorAll(".nav-btn")
+const navButtons = document.querySelectorAll(".nav-btn span")
 
 function home() {
   hero()
@@ -50,6 +51,9 @@ navButtons.forEach((button) => {
         break
       case "menus":
         menu()
+        break
+      case "contact":
+        contact()
         break
 
       default:

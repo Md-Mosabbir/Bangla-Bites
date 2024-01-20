@@ -45,6 +45,7 @@ function menu() {
 
   const menuContainer = document.createElement("div")
   menuContainer.classList.add("menu-container")
+  menuContainer.classList.add("full-bleed")
 
   menuItems.forEach((item) => {
     const menuItem = document.createElement("div")
@@ -57,11 +58,12 @@ function menu() {
     itemDescription.textContent = item.description
 
     const itemPrice = document.createElement("p")
-    itemPrice.textContent = `Price: ${item.price}`
+    itemPrice.textContent = `${item.price}`
 
     const itemImage = document.createElement("img")
     itemImage.src = item.imageSrc
     itemImage.alt = item.name
+    itemImage.loading = "lazy"
 
     menuItem.appendChild(itemImage)
     menuItem.appendChild(itemName)

@@ -19,7 +19,7 @@ function hero() {
         </div>
          <section class="hero-text">
             <h1>Discover The Rich World Of Bangla Flavours</h1>
-            <h2>your passport ot Desi Delights!</h2>
+            <h2>Your passport ot Desi Delights!</h2>
         </section>
     </div>
     
@@ -53,14 +53,6 @@ function hero() {
       opacity: 1,
     },
   )
-
-  // Animation for the hero image
-  tl.from(".image-container img", {
-    scale: 1.2,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
-  })
 
   // Optionally, you can set the timeline to start when the page loads
   tl.play()
