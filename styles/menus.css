@@ -21,6 +21,13 @@
   width: 410px;
 }
 
+.menu-item:hover {
+  background-color: var(--neutral-black);
+  color: var(--neutral-white);
+  scale: 1.1;
+  transition: all 0.4s ease;
+}
+
 .menu-item .price {
   font-size: 1.8rem;
   margin-top: 0.4em;

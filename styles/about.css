@@ -28,3 +28,24 @@
 .spacer {
   margin: 65vh;
 }
+
+@media (width <= 1300px) {
+  #text-content {
+    font-size: 5rem;
+  }
+}
+@media (width <= 1100px) {
+  #text-content {
+    font-size: 3rem;
+  }
+}
+@media (width <= 650px) {
+  #text-content {
+    font-size: 2rem;
+  }
+}
+@media (width <= 400px) {
+  #text-content {
+    font-size: 1.2rem;
+  }
+}

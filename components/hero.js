@@ -36,11 +36,11 @@ function hero() {
     ease: "power2.out",
   })
 
-  const text = new SplitType(".hero-text h1", { types: "chars" })
+  const text = new SplitType(".hero-text h1", { types: "words" })
 
   // Animation for the hero text
   tl.fromTo(
-    text.chars,
+    text.words,
     {
       y: 70,
       opacity: 0,
@@ -55,6 +55,16 @@ function hero() {
 
   // Optionally, you can set the timeline to start when the page loads
   tl.play()
+
+  const heroText = document.querySelector(".hero-text")
+  const cursor = document.querySelector(".cursor")
+
+  heroText.addEventListener("mouseenter", () => {
+    cursor.classList.add("cursor-title-hover")
+  })
+  heroText.addEventListener("mouseleave", () => {
+    cursor.classList.remove("cursor-title-hover")
+  })
 }
 
 export default hero

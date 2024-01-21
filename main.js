@@ -7,6 +7,39 @@ import footerModule from "./components/footer"
 import menu from "./components/menu"
 import contact from "./components/contact"
 
+const hamburger = document.querySelector(".hamburger")
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("cross")
+})
+
+// Mouse animation and tracking ------------------->
+
+const cursor = document.querySelector(".cursor")
+
+// Check if the device supports hover (cursor-based interactions)
+function updateCursor() {
+  // Check if the device supports hover (cursor-based interactions)
+  if (matchMedia("(hover: hover)").matches) {
+    // Show the cursor on devices that support hover
+    cursor.style.display = "block"
+
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = `${e.clientX}px`
+      cursor.style.top = `${e.clientY}px`
+    })
+  } else {
+    // Hide the cursor on devices that don't support hover
+    cursor.style.display = "none"
+  }
+}
+
+// Initial check on page load
+updateCursor()
+
+// Update on window resize
+window.addEventListener("resize", updateCursor)
+
 // Smooth scroll
 
 const lenis = new Lenis()
