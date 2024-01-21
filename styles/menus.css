@@ -9,20 +9,41 @@
 }
 
 .menu-item {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 1rem;
+  border: 1px solid #b9b9b9;
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   gap: 0.8rem;
   padding: 0.5rem;
+  width: 410px;
+}
+
+.menu-item .price {
+  font-size: 1.8rem;
+  margin-top: 0.4em;
+}
+
+.menu-text-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-family: var(--primary-font);
+}
+
+.menu-text-container h3 {
+  font-size: 2rem;
+}
+.menu-text-container p {
+  font-size: 1.2rem;
 }
 
 .menu-item img {
   width: 400px;
-  border-radius: 1rem;
-  border: 1px solid black;
+
+  border: 1px solid rgba(0, 0, 0, 0.205);
 
   aspect-ratio: 1/1;
 }

@@ -15,13 +15,7 @@ function aboutUs() {
       <div class="about-text-container">
         <div class="text-wrapper">
           <p id="text-content" data-bg-color="#ededeb" data-fg-color= "#000000" >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ab non
-            quos optio maiores. Nulla ut itaque consequatur esse error, nobis
-            minus eligendi asperiores mollitia a similique tempore dignissimos
-            architecto incidunt accusamus deserunt nemo nisi eveniet corrupti unde
-            voluptatibus? Atque minus quae aspernatur fugit reiciendis dolore fuga
-            voluptates magni itaque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Omnis, enim.
+          Bengali Bites: Crafting experiences, celebrating Bangladeshi cuisine's soul. Connect with top chefs, create memorable meals, and savor joyful moments.          
           </p>
         </div>
     </div>
@@ -35,10 +29,10 @@ function aboutUs() {
   const bg = split.dataset.bgColor
   const fg = split.dataset.fgColor
 
-  const text = new SplitType(split, { types: "chars" })
+  const text = new SplitType(split, { types: "words" })
 
   gsap.fromTo(
-    text.chars,
+    text.words,
     {
       color: bg,
       opacity: 0.6,
@@ -48,7 +42,7 @@ function aboutUs() {
       stagger: 0.5,
       scrollTrigger: {
         trigger: split,
-        start: "+=300",
+        start: "+=900",
         end: "+=500",
 
         scrub: true,

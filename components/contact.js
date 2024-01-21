@@ -23,11 +23,24 @@ function contact() {
     </section>
   `
 
-  root.innerHTML = "" // Clear the content before adding the contact module
   root.appendChild(contactContainer)
+
   footerModule()
 
   // GSAP Animation
+  gsap.from(".contact-text h1", {
+    y: 100,
+
+    opacity: 0,
+    duration: 1,
+  })
+
+  gsap.from(".address p", {
+    x: 100, // move from right
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2, // stagger the animations
+  })
 }
 
 export default contact

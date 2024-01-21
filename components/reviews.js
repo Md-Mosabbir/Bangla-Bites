@@ -7,16 +7,42 @@ gsap.registerPlugin(ScrollTrigger)
 function reviews() {
   const reviewsList = [
     {
-      name: "Suresh",
+      name: "Rita D.",
       description:
-        "skljflksdjfksdjflksdfjajfiawefnvoianwefnafjwafiownfuinweiufskljflksdjfksdjflksdfjajfiawefnvoianwefnafjwafiownskljflksdjfksdjflksdfjajfiawefnvoianwefnafjwafiownnwuefnwnfiueh",
+        "A culinary delight! Bangla Bites is a hidden gem that captures the essence of Bangladeshi flavors. Every dish is a journey into the heart of this rich cuisine. A must-visit for all food enthusiasts!",
     },
     {
-      name: "Muresh",
+      name: "Amit K.",
       description:
-        "skljflksdjfksdjflksdfjajfiawefnvoianwefnafjwafiownfuiskljflksdjfksdjflksdfjajfiawefnvoianwefnafjwafiownnweiufnwuefnwnfiueh",
+        "Incredible! The authenticity of Bangla Bites is unmatched. From the warm hospitality to the flavorful dishes, it's a true taste of Bangladesh. The fish curry is a personal favorite. Highly recommended!",
+    },
+    {
+      name: "Sophia M.",
+      description:
+        "Bengali Bliss! Bangla Bites is my go-to place for a taste of home. The cozy ambiance and the aromatic spices transport me back to the streets of Dhaka. The staff is friendly, and the food is simply divine.",
+    },
+    {
+      name: "Arjun S.",
+      description:
+        "Spice Paradise! Bangla Bites knows how to balance the spices perfectly. The menu offers a variety of options, and each dish is a burst of flavors. The kebabs are a must-try. Can't get enough of this place!",
+    },
+    {
+      name: "Priya G.",
+      description:
+        "Home Away from Home! As someone who grew up with Bangladeshi cuisine, Bangla Bites feels like a home away from home. The attention to detail in each dish is remarkable. The atmosphere is warm, and the staff is welcoming.",
+    },
+    {
+      name: "Rahul B.",
+      description:
+        "Flavors Galore! Bangla Bites is a flavor explosion. The diversity in the menu ensures there's something for everyone. Whether you're a spice enthusiast or prefer milder dishes, this place caters to all taste buds.",
+    },
+    {
+      name: "Ananya R.",
+      description:
+        "Sensational Sweets! The desserts at Bangla Bites are a sweet symphony. The traditional Bengali sweets are heavenly, and the presentation is top-notch. A perfect way to end a delightful meal!",
     },
   ]
+
   const root = document.getElementById("root")
 
   const aboutWrapper = document.createElement("section")
@@ -65,10 +91,21 @@ function reviews() {
         scrub: 1,
 
         start: "-=200",
-        end: "+=2000",
+        end: "+=4000",
       },
     },
   )
+  const appear = gsap.from(aboutWrapper, {
+    scrollTrigger: {
+      trigger: ".reviews-wrapper",
+
+      start: "top 80%", // Adjust the start position as needed
+      end: "bottom 20%", // Adjust the end position as needed
+    },
+    opacity: 0,
+    y: 30,
+    scale: 0.6,
+  })
 }
 
 export default reviews

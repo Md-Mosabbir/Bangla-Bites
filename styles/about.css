@@ -3,9 +3,17 @@
   padding-block: 4rem;
   margin-top: -100vh;
 }
+
+.about-us {
+  background-color: var(--neutral-white);
+  box-shadow: 0 0 0 100vmax var(--neutral-white);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
 #text-content {
-  font-size: 2.5rem;
-  font-family: var(--main-font);
+  font-size: 6rem;
+  text-align: center;
+  font-family: var(--primary-font);
   width: 1200px;
 }
 

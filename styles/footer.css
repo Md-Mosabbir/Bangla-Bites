@@ -1,33 +1,21 @@
 .footer-container {
-  background-color: #333;
-  padding: 20px;
+  background-color: var(--neutral-black);
+  padding: 1.2rem;
   color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  font-family: "Arial", sans-serif; /* Use your preferred font-family */
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  font-family: var(--secondary-font);
 }
 
 .footer-text {
+  display: flex;
+
+  flex-direction: column;
   max-width: 300px;
   font-size: 16px; /* Adjust as needed */
   line-height: 1.6; /* Adjust as needed */
 }
 
 .footer-text h3 {
-  font-size: 24px; /* Adjust as needed */
-}
-
-.footer-text p {
-  font-size: 14px; /* Adjust as needed */
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-/* Add some hover effect for social icons */
-.social-icons a:hover img {
-  opacity: 0.8; /* Adjust as needed */
+  font-size: 2rem; /* Adjust as needed */
 }

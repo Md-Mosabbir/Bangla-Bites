@@ -51,6 +51,21 @@ function menu() {
     const menuItem = document.createElement("div")
     menuItem.classList.add("menu-item")
 
+    // Create div for the image
+    const imageContainer = document.createElement("div")
+    imageContainer.classList.add("menu-image-container")
+
+    const itemImage = document.createElement("img")
+    itemImage.src = item.imageSrc
+    itemImage.alt = item.name
+    itemImage.loading = "lazy"
+
+    imageContainer.appendChild(itemImage)
+
+    // Create div for text content
+    const textContainer = document.createElement("div")
+    textContainer.classList.add("menu-text-container")
+
     const itemName = document.createElement("h3")
     itemName.textContent = item.name
 
@@ -59,16 +74,15 @@ function menu() {
 
     const itemPrice = document.createElement("p")
     itemPrice.textContent = `${item.price}`
+    itemPrice.classList.add("price")
 
-    const itemImage = document.createElement("img")
-    itemImage.src = item.imageSrc
-    itemImage.alt = item.name
-    itemImage.loading = "lazy"
+    textContainer.appendChild(itemName)
+    textContainer.appendChild(itemDescription)
+    textContainer.appendChild(itemPrice)
 
-    menuItem.appendChild(itemImage)
-    menuItem.appendChild(itemName)
-    menuItem.appendChild(itemDescription)
-    menuItem.appendChild(itemPrice)
+    // Append both image and text containers to the main menu item container
+    menuItem.appendChild(imageContainer)
+    menuItem.appendChild(textContainer)
 
     menuContainer.appendChild(menuItem)
   })

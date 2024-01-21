@@ -1,5 +1,6 @@
 .reviews-wrapper {
   overflow-x: hidden;
+  font-family: var(--primary-font);
 
   position: relative;
   height: 90vh;
@@ -7,15 +8,24 @@
 
 .reviews-container {
   display: flex;
-  gap: 1rem;
-  width: 300vw;
+
+  width: 400vw;
   position: relative;
-  background-color: coral;
+}
+.review-name {
+  font-size: 2.5rem;
+}
+.review-text {
+  font-size: 2rem;
+  width: 50rem;
+  line-height: 1.2em;
 }
 
 .review-block {
-  width: 100vw;
-  height: 30vh;
-  background-color: red;
-  padding: 4rem 3rem;
+  padding: 3em 2em;
+  border-inline: 1px solid rgba(0, 0, 0, 0.466);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

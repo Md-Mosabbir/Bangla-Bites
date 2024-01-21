@@ -7,7 +7,6 @@ function hero() {
 
   const heroContainer = document.createElement("div")
   heroContainer.classList.add("hero-container")
-  heroContainer.classList.add("full-bleed")
 
   heroContainer.innerHTML = `
     <div class="hero-front-container">

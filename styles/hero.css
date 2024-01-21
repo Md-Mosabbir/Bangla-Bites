@@ -1,6 +1,8 @@
 .hero-container {
   height: calc(100vh - 7rem);
   background-color: var(--background-colour);
+  box-shadow: 0 0 0 100vmax var(--background-colour);
+  clip-path: inset(0 -100vmax);
   position: relative;
   z-index: 4;
 }
@@ -9,11 +11,6 @@
   justify-content: space-between;
   padding-top: 5rem;
   height: calc(100vh - 7rem);
-}
-
-.full-bleed {
-  box-shadow: 0 0 0 100vmax var(--background-colour);
-  clip-path: inset(0 -100vmax);
 }
 
 .image-container img {
