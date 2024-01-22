@@ -75,6 +75,8 @@ function reviews() {
 
   const sections = gsap.utils.toArray(".reviews-container article")
 
+  const cursor = document.querySelector(".cursor")
+
   // Initial state animation
 
   // Scroll-triggered animation
@@ -92,6 +94,27 @@ function reviews() {
 
         start: "-=200",
         end: "+=4000",
+
+        onUpdate: (self) => {
+          document.documentElement.style.setProperty(
+            "--custom-bottom",
+            `${-100 * self.progress}px`,
+          )
+
+          // Check if the progress is equal to 1 (animation complete)
+          if (self.progress === 1) {
+            // Remove your class when the animation is complete
+            cursor.classList.remove("review-hover")
+          }
+        },
+        onEnter: () => {
+          // Add your class when entering the trigger
+          cursor.classList.add("review-hover")
+        },
+        onLeaveBack: () => {
+          // Remove your class when leaving the trigger in the reverse direction
+          cursor.classList.remove("review-hover")
+        },
       },
     },
   )

@@ -30,6 +30,7 @@ function aboutUs() {
   const fg = split.dataset.fgColor
 
   const text = new SplitType(split, { types: "words" })
+  const cursor = document.querySelector(".cursor")
 
   gsap.fromTo(
     text.words,
@@ -46,6 +47,21 @@ function aboutUs() {
         end: "+=500",
 
         scrub: true,
+        onUpdate: (self) => {
+          // Check if the progress is equal to 1 (animation complete)
+          if (self.progress === 1) {
+            // Remove your class when the animation is complete
+            cursor.classList.remove("about-title-hover")
+          }
+        },
+        onEnter: () => {
+          // Add your class when entering the trigger
+          cursor.classList.add("about-title-hover")
+        },
+        onLeaveBack: () => {
+          // Remove your class when leaving the trigger in the reverse direction
+          cursor.classList.remove("about-title-hover")
+        },
       },
       opacity: 1,
     },

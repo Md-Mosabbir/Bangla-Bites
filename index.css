@@ -23,6 +23,8 @@
   --background-colour: hsl(50, 27%, 91%);
   --neutral-white: #fff;
   --neutral-black: #000000;
+
+  --custom-bottom: -100px;
 }
 
 /* Header */
@@ -117,7 +119,47 @@
 .cursor-title-hover {
   scale: 3.5;
   outline: none;
+
   backdrop-filter: invert(2);
+}
+
+.about-title-hover,
+.review-hover {
+  scale: 3.5;
+  outline: none;
+  overflow: hidden;
+
+  backdrop-filter: invert(2);
+}
+
+.review-hover::before,
+.about-title-hover::before {
+  content: "About Us";
+  color: var(--neutral-white);
+
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--secondary-font);
+}
+.review-hover::before {
+  content: "Reviews";
+  z-index: 7;
+  color: var(--neutral-white);
+}
+
+.review-hover::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  aspect-ratio: 1/1;
+  bottom: var(--custom-bottom);
+
+  background-color: #ffd600;
 }
 
 .hamburger-container {

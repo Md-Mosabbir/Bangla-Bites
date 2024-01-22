@@ -6,6 +6,7 @@
   background-color: var(--background-colour);
   margin-bottom: 3rem;
   padding-block: 3rem;
+  justify-content: space-between;
 }
 
 .menu-item {
@@ -48,9 +49,40 @@
 }
 
 .menu-item img {
-  width: 400px;
+  max-width: 400px;
 
   border: 1px solid rgba(0, 0, 0, 0.205);
 
   aspect-ratio: 1/1;
+}
+
+@media (width <= 985px) {
+  .menu-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width <= 500px) {
+  .menu-item {
+    width: auto;
+
+    max-width: 410px;
+  }
+  .menu-item img {
+    max-width: 350px;
+  }
+}
+@media (width <= 380px) {
+  .menu-item img {
+    max-width: 200px;
+    border-radius: 12px;
+  }
+
+  .menu-text-container h3 {
+    font-size: 1.2rem;
+  }
+  .menu-text-container p {
+    font-size: 0.9rem;
+  }
 }

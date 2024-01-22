@@ -12,8 +12,20 @@ function contact() {
     <section class="contact-details">
       <div class="contact-text">
         <h1>Let's Get Connected</h1>
-        <p>bengal@gmail.com</p>
+        <p class="email">bengal@gmail.com</p>
+
+        <div class="opening-hours">
+        <h2>Opening Hours</h2>
+        <div>
+          <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
       </div>
+
+
+      </div>
+      
   
       <div class="address">
         <p>01234567889</p>
