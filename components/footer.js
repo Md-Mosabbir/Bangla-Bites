@@ -11,9 +11,9 @@ function footerModule() {
   <div class="footer-content">
     <div class="footer-text">
       <h3>Contact Us</h3>
-      <p>123 Restaurant Street, Dhaka</p>
+      <p> Avenue Plaza, Gushan, Dhaka</p>
       <p>Phone: +123 456 789</p>
-      <p>Email: info@bengali-delights.com</p>
+      <p>Email: bengal@gmail.com</p>
     </div>
     
   </div>
