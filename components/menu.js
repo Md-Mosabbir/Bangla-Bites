@@ -2,6 +2,13 @@ import gsap from "gsap"
 import "../styles/menus.css"
 import footerModule from "./footer"
 
+// Import images
+import fishCurryImage from "../assets/fish-curry.jpg"
+import biryaniImage from "../assets/biryani.jpg"
+import shorsheIlishImage from "../assets/shorshe-ilish.jpg"
+import machherMathaDiyeDalImage from "../assets/machher-matha-diye-dal.jpg"
+import chickenKormaImage from "../assets/chicken-korma.jpg"
+
 function menu() {
   const root = document.getElementById("root")
 
@@ -10,39 +17,35 @@ function menu() {
       name: "Fish Curry",
       description: "Delicious fish curry cooked with authentic Bengali spices.",
       price: "$15.99",
-      imageSrc: "../assets/fish-curry.jpg",
+      imageSrc: fishCurryImage,
     },
     {
       name: "Biryani",
       description:
         "Flavorful rice dish with aromatic spices and choice of meat.",
       price: "$12.99",
-      imageSrc: "../assets/biryani.jpg",
+      imageSrc: biryaniImage,
     },
     {
       name: "Shorshe Ilish",
       description: "Hilsa fish marinated in mustard sauce, a Bengali delicacy.",
       price: "$18.99",
-      imageSrc: "../assets/shorshe-ilish.jpg",
+      imageSrc: shorsheIlishImage,
     },
-
     {
       name: "Machher Matha Diye Dal",
       description: "Lentils cooked with fish head for a unique flavor.",
       price: "$13.99",
-      imageSrc: "../assets/machher-matha-diye-dal.jpg",
+      imageSrc: machherMathaDiyeDalImage,
     },
-
     {
       name: "Chicken Korma",
       description: "Chicken cooked in a rich, creamy, and mildly spiced curry.",
       price: "$16.99",
-      imageSrc: "../assets/chicken-korma.jpg",
+      imageSrc: chickenKormaImage,
     },
-
     // Add more items as needed
   ]
-
   const menuContainer = document.createElement("div")
   menuContainer.classList.add("menu-container")
   menuContainer.classList.add("full-bleed")
