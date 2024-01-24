@@ -52,6 +52,17 @@
   /* tempo------------------- */
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-logo h2 {
+  font-family: var(--primary-font);
+  font-size: var(--heading2-size);
+}
+
 .main-navigation .nav-btn {
   font-size: 1.3rem;
   position: relative;
@@ -172,8 +183,7 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.24);
   width: 50px;
-  height: 50px;
-  padding-top: 10px;
+  height: 40px;
 
   cursor: pointer;
   position: relative;
@@ -207,23 +217,74 @@
   transform: translateY(6px);
 }
 
-.cross .line1 {
-  transform: rotate(45deg) translate(-5px, -5px);
+/* Hamburger options --------- */
+
+.overlay-menu {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(172, 163, 85);
+  top: 0;
+
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
 }
 
-.cross .line2 {
-  opacity: 0;
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.cross .line3 {
-  transform: rotate(-45deg) translate(5px, -5px);
+.options button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+
+  font-size: 3rem;
+  text-align: end;
+  color: var(--neutral-white);
 }
 
-@media (width <= 800px) {
+.cancel::before,
+.cancel::after {
+  content: "";
+  width: 50px;
+  right: 1.5rem;
+  top: 3rem;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--neutral-white);
+  position: absolute;
+
+  transform-origin: center;
+}
+
+.cancel::before {
+  transform: rotate(45deg);
+}
+.cancel::after {
+  transform: rotate(-45deg);
+}
+
+@media (width <= 1000px) {
   .main-navigation {
     display: none;
   }
   .hamburger {
     display: flex;
+  }
+}
+@media (width <= 300px) {
+  .header-logo img {
+    width: 50px;
+    aspect-ratio: 1/1;
   }
 }

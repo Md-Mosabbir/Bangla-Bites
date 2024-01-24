@@ -40,7 +40,7 @@ function aboutUs() {
     },
     {
       color: fg,
-      stagger: 0.5,
+      stagger: 1.5,
       scrollTrigger: {
         trigger: split,
         start: "+=900",
