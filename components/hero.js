@@ -1,6 +1,7 @@
 import gsap from "gsap"
 import "../styles/hero.css"
 import SplitType from "split-type"
+import heroImage from "../assets/delicious-fresh-food-plate.jpg"
 
 function hero() {
   const root = document.getElementById("root")
@@ -12,7 +13,7 @@ function hero() {
     <div class="hero-front-container">
         <div class="image-container">
             <img
-                src="./assets/delicious-fresh-food-plate.jpg"
+                src= ${heroImage}
                 alt="image of a fish curry"
             />
         </div>
