@@ -15,7 +15,7 @@ function aboutUs() {
       <div class="about-text-container">
         <div class="text-wrapper">
           <p id="text-content" data-bg-color="#ededeb" data-fg-color= "#000000" >
-          Bengali Bites: Crafting experiences, celebrating Bangladeshi cuisine's soul. Connect with top chefs, create memorable meals, and savor joyful moments.          
+          Bangla Bites: Crafting experiences, celebrating Bangladeshi cuisine's soul. Connect with top chefs, create memorable meals, and savor joyful moments.          
           </p>
         </div>
     </div>
